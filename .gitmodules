@@ -1,0 +1,8 @@
+[submodule "turtlebot_ws/src/ld08_driver"]
+	path = turtlebot_ws/src/ld08_driver
+	url = https://github.com/ROBOTIS-GIT/ld08_driver.git
+	branch = humble
+[submodule "turtlebot_ws/src/turtlebot3"]
+	path = turtlebot_ws/src/turtlebot3
+	url = https://github.com/ROBOTIS-GIT/turtlebot3.git
+	branch = humble
