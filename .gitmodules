@@ -6,8 +6,3 @@
 	path = turtlebot_ws/src/turtlebot3
 	url = https://github.com/ROBOTIS-GIT/turtlebot3.git
 	branch = humble
-
-[submodule "woofbot_ws/src/turtlebot3"]
-	path = woofbot_ws/src/turtlebot3
-	url = https://github.com/maiabriggs/turtlebot3-woofbot.git
-	branch = humble
