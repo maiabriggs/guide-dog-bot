@@ -1,3 +1,6 @@
 turtlebot_ws/build
 turtlebot_ws/install
 turtlebot_ws/log
+woofbot_ws/build
+woofbot_ws/install
+woofbot_ws/log
