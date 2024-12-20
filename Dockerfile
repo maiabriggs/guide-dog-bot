@@ -12,6 +12,8 @@ RUN apt-get update && \
     lsb-release \
     nano \
     udev \
+    python3-pip \
+    gdb \
     locales && \
     locale-gen en_US en_US.UTF-8 && \
     update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 && \
@@ -48,6 +50,16 @@ RUN apt-get update && \
     ros-humble-dynamixel-sdk \
     libudev-dev \
     x11-apps && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+#Libcamera dependencies
+RUN apt-get update && \
+    apt-get install -y \
+    meson ninja-build \
+    python3 -ply \
+    python3-jinja2 \
+    openssl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
