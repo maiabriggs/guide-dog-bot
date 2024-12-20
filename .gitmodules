@@ -19,3 +19,6 @@
 	path = woofbot_ws/src/rpicam-apps
 	url = https://github.com/raspberrypi/rpicam-apps.git
 
+[submodule "woofbot_ws/src/camera_ros"]
+	path = woofbot_ws/src/camera_ros
+	url = https://github.com/maiabriggs/camera_ros.git
