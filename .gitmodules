@@ -10,11 +10,12 @@
 	path = woofbot_ws/src/turtlebot3
 	url = https://github.com/maiabriggs/turtlebot3-woofbot.git
 	branch = humble
-
-[submodule "woofbot_ws/src/camera_ros"]
-	path = woofbot_ws/src/camera_ros
-	url = https://github.com/christianrauch/camera_ros.git
 	
 [submodule "woofbot_ws/src/libcamera"]
 	path = woofbot_ws/src/libcamera
 	url = https://github.com/raspberrypi/libcamera.git
+
+[submodule "woofbot_ws/src/rpicam-apps"]
+	path = woofbot_ws/src/rpicam-apps
+	url = https://github.com/raspberrypi/rpicam-apps.git
+
