@@ -22,3 +22,6 @@
 [submodule "woofbot_ws/src/camera_ros"]
 	path = woofbot_ws/src/camera_ros
 	url = https://github.com/maiabriggs/camera_ros.git
+[submodule "woofbot_ws/src/woofbot"]
+	path = woofbot_ws/src/woofbot
+	url = https://github.com/maiabriggs/woofbot.git
