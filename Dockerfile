@@ -57,7 +57,7 @@ RUN apt-get update && \
 # RUN apt-get update && \
 #     apt-get install -y \
 #     meson ninja-build \
-#     python3 -ply \
+#     python3-ply \
 #     python3-jinja2 \
 #     openssl && \
 #     apt-get clean && \
