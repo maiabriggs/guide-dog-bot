@@ -16,9 +16,5 @@ echo "Running entrypoint"
 udevadm control --reload-rules
 udevadm trigger
 
-echo 'export ROS_DOMAIN_ID=13' >> ~/.bashrc
-echo 'export TURTLEBOT3_MODEL=burger' >> ~/.bashrc
-echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc
-
 # Execute the command passed to the script
 exec "$@"

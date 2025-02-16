@@ -53,15 +53,15 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-#Libcamera dependencies
-RUN apt-get update && \
-    apt-get install -y \
-    meson ninja-build \
-    python3 -ply \
-    python3-jinja2 \
-    openssl && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+# #Libcamera dependencies
+# RUN apt-get update && \
+#     apt-get install -y \
+#     meson ninja-build \
+#     python3 -ply \
+#     python3-jinja2 \
+#     openssl && \
+#     apt-get clean && \
+#     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /home/maia/turtlebotDocker
 
