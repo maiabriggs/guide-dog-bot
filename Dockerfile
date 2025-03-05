@@ -53,16 +53,14 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# #Libcamera dependencies
-# RUN apt-get update && \
-#     apt-get install -y \
-#     meson ninja-build \
-#     python3-ply \
-#     python3-jinja2 \
-#     openssl && \
-#     apt-get clean && \
-#     rm -rf /var/lib/apt/lists/*
-
+# Install Dependencies for libcamera. Working as of https://github.com/raspberrypi/libcamera/commit/8cebd777cae428daf415998cc588fe60c6de0d66
+RUN apt update && apt install -y git python3-pip git python3-jinja2 \
+      libboost-dev \
+      libgnutls28-dev openssl libtiff-dev pybind11-dev \
+      meson cmake \
+      python3-yaml python3-ply \
+      libglib2.0-dev libgstreamer-plugins-base1.0-dev
+    
 WORKDIR /home/maia/turtlebotDocker
 
 # Add the entrypoint script
@@ -70,8 +68,6 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
-# Source the ROS 2 setup script
-RUN echo "source /opt/ros/humble/setup.bash" >> /etc/bash.bashrc
 
 # Expose any necessary ports (e.g., for remote connections or web interfaces)
 EXPOSE 11311
